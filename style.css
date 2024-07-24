@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border-radius: 15px ;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.headings{
+    color: #0029FF;
+    margin-top: 40px;
+}
+
+.card-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info-icon {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.description {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    border-bottom: 1px solid rgba(233, 236, 239, 1);
+}
+.card-content {
+    padding: 20px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+
+}
+.thread-inputs{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.thread-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.action-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+}
+
+.sub-thread-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.editor-toolbar, .editor-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.method-section {
+    margin-bottom: 15px;
+}
+
+.method-section h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.expand-icon {
+    font-size: 12px;
+}
+
+.see-more {
+    display: block;
+    text-align: right;
+    color: #2196F3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* style */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo {
+    font-weight: 600;
+    font-size: 24px;
+}
+.user-actions {
+    display: flex;
+    gap: 20px;
+}
+.user-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #000000;
+}
+.description {
+    background-color: #FDFDFD;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.side-menu {
+    position: fixed;
+    right: 20px;
+    top: 80%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.side-menu button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0029FF;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
