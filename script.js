@@ -144,6 +144,11 @@ function createAssetContainer(asset) {
   return assetHTML;
 }
 
+// Set the project title and description
+document.getElementById('technical-project-management').textContent = jsonData.title;
+document.getElementById('task-details').innerHTML = jsonData.description;
+
+
 // Function to render task details
 function renderTaskDetails(task) {
   const taskContainer = document.getElementById('task-details');
